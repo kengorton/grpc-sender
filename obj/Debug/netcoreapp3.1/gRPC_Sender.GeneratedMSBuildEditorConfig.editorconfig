@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = gRPC_Sender
+build_property.ProjectDir = C:\temp\grpc-sender\
