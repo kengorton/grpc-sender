@@ -10,7 +10,7 @@ using grpc = global::Grpc.Core;
 namespace Esri.Realtime.Core.Grpc {
   public static partial class GrpcFeed
   {
-    static readonly string __ServiceName = "GrpcFeed";
+    static readonly string __ServiceName = "esri.realtime.core.grpc.GrpcFeed";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,25 +46,25 @@ namespace Esri.Realtime.Core.Grpc {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Esri.Realtime.Core.Grpc.Request> __Marshaller_Request = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Esri.Realtime.Core.Grpc.Request.Parser));
+    static readonly grpc::Marshaller<global::Esri.Realtime.Core.Grpc.Request> __Marshaller_esri_realtime_core_grpc_Request = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Esri.Realtime.Core.Grpc.Request.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Esri.Realtime.Core.Grpc.Response> __Marshaller_Response = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Esri.Realtime.Core.Grpc.Response.Parser));
+    static readonly grpc::Marshaller<global::Esri.Realtime.Core.Grpc.Response> __Marshaller_esri_realtime_core_grpc_Response = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Esri.Realtime.Core.Grpc.Response.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> __Method_stream = new grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response>(
+    static readonly grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> __Method_Stream = new grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response>(
         grpc::MethodType.ClientStreaming,
         __ServiceName,
-        "stream",
-        __Marshaller_Request,
-        __Marshaller_Response);
+        "Stream",
+        __Marshaller_esri_realtime_core_grpc_Request,
+        __Marshaller_esri_realtime_core_grpc_Response);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> __Method_send = new grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response>(
+    static readonly grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> __Method_Send = new grpc::Method<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "send",
-        __Marshaller_Request,
-        __Marshaller_Response);
+        "Send",
+        __Marshaller_esri_realtime_core_grpc_Request,
+        __Marshaller_esri_realtime_core_grpc_Response);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -107,9 +107,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncClientStreamingCall<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> stream(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncClientStreamingCall<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> Stream(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return stream(new grpc::CallOptions(headers, deadline, cancellationToken));
+        return Stream(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// client streaming rpc for high velocity
@@ -117,9 +117,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncClientStreamingCall<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> stream(grpc::CallOptions options)
+      public virtual grpc::AsyncClientStreamingCall<global::Esri.Realtime.Core.Grpc.Request, global::Esri.Realtime.Core.Grpc.Response> Stream(grpc::CallOptions options)
       {
-        return CallInvoker.AsyncClientStreamingCall(__Method_stream, null, options);
+        return CallInvoker.AsyncClientStreamingCall(__Method_Stream, null, options);
       }
       /// <summary>
       /// simple rpc for lower velocity
@@ -130,9 +130,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Esri.Realtime.Core.Grpc.Response send(global::Esri.Realtime.Core.Grpc.Request request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Esri.Realtime.Core.Grpc.Response Send(global::Esri.Realtime.Core.Grpc.Request request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return send(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return Send(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// simple rpc for lower velocity
@@ -141,9 +141,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Esri.Realtime.Core.Grpc.Response send(global::Esri.Realtime.Core.Grpc.Request request, grpc::CallOptions options)
+      public virtual global::Esri.Realtime.Core.Grpc.Response Send(global::Esri.Realtime.Core.Grpc.Request request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_send, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_Send, null, options, request);
       }
       /// <summary>
       /// simple rpc for lower velocity
@@ -154,9 +154,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Esri.Realtime.Core.Grpc.Response> sendAsync(global::Esri.Realtime.Core.Grpc.Request request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Esri.Realtime.Core.Grpc.Response> SendAsync(global::Esri.Realtime.Core.Grpc.Request request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return sendAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SendAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
       /// simple rpc for lower velocity
@@ -165,9 +165,9 @@ namespace Esri.Realtime.Core.Grpc {
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Esri.Realtime.Core.Grpc.Response> sendAsync(global::Esri.Realtime.Core.Grpc.Request request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Esri.Realtime.Core.Grpc.Response> SendAsync(global::Esri.Realtime.Core.Grpc.Request request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_send, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_Send, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

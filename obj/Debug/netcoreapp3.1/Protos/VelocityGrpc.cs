@@ -24,14 +24,18 @@ namespace Esri.Realtime.Core.Grpc {
     static VelocityGrpcReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpQcm90b3MvdmVsb2NpdHlfZ3JwYy5wcm90bxoZZ29vZ2xlL3Byb3RvYnVm",
-            "L2FueS5wcm90byIlCgdSZXF1ZXN0EhoKCGZlYXR1cmVzGAEgAygLMgguRmVh",
-            "dHVyZSIzCgdGZWF0dXJlEigKCmF0dHJpYnV0ZXMYASADKAsyFC5nb29nbGUu",
-            "cHJvdG9idWYuQW55IikKCFJlc3BvbnNlEg8KB21lc3NhZ2UYASABKAkSDAoE",
-            "Y29kZRgCIAEoBTJICghHcnBjRmVlZBIfCgZzdHJlYW0SCC5SZXF1ZXN0Ggku",
-            "UmVzcG9uc2UoARIbCgRzZW5kEgguUmVxdWVzdBoJLlJlc3BvbnNlQkQKG2Nv",
-            "bS5lc3JpLnJlYWx0aW1lLmNvcmUuZ3JwY0IJR3JwY1Byb3RvUAGqAhdFc3Jp",
-            "LlJlYWx0aW1lLkNvcmUuR3JwY2IGcHJvdG8z"));
+            "ChpQcm90b3MvdmVsb2NpdHlfZ3JwYy5wcm90bxIXZXNyaS5yZWFsdGltZS5j",
+            "b3JlLmdycGMaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8iPQoHUmVxdWVz",
+            "dBIyCghmZWF0dXJlcxgBIAMoCzIgLmVzcmkucmVhbHRpbWUuY29yZS5ncnBj",
+            "LkZlYXR1cmUiMwoHRmVhdHVyZRIoCgphdHRyaWJ1dGVzGAEgAygLMhQuZ29v",
+            "Z2xlLnByb3RvYnVmLkFueSIpCghSZXNwb25zZRIPCgdtZXNzYWdlGAEgASgJ",
+            "EgwKBGNvZGUYAiABKAUyqAEKCEdycGNGZWVkEk8KBlN0cmVhbRIgLmVzcmku",
+            "cmVhbHRpbWUuY29yZS5ncnBjLlJlcXVlc3QaIS5lc3JpLnJlYWx0aW1lLmNv",
+            "cmUuZ3JwYy5SZXNwb25zZSgBEksKBFNlbmQSIC5lc3JpLnJlYWx0aW1lLmNv",
+            "cmUuZ3JwYy5SZXF1ZXN0GiEuZXNyaS5yZWFsdGltZS5jb3JlLmdycGMuUmVz",
+            "cG9uc2VCXQobY29tLmVzcmkucmVhbHRpbWUuY29yZS5ncnBjQglHcnBjUHJv",
+            "dG9QAVoXZXNyaS9yZWFsdGltZS9jb3JlL2dycGOqAhdFc3JpLlJlYWx0aW1l",
+            "LkNvcmUuR3JwY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
